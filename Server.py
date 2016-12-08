@@ -195,7 +195,7 @@ def init_socket_server():
         (r'/judge', WebSocketClient),
         (r'/reqjudge', RequestClient),
     ])
-    app.listen(2501)
+    app.listen(Config.SERVER_PORT)
 
 
 def main():
